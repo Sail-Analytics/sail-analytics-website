@@ -24,6 +24,19 @@ import { Route as ApproachVsFreelancersRouteImport } from './routes/approach_.vs
 import { Route as ApproachVsHiringRouteImport } from './routes/approach_.vs-hiring'
 import { Route as ApproachVsItServicesRouteImport } from './routes/approach_.vs-it-services'
 import { Route as ApproachVsStaffingRouteImport } from './routes/approach_.vs-staffing'
+import { Route as WorkCapitalEquipmentRouteImport } from './routes/work_.capital-equipment'
+import { Route as WorkDemandForecastingRouteImport } from './routes/work_.demand-forecasting'
+import { Route as WorkEcommerceReportingRouteImport } from './routes/work_.ecommerce-reporting'
+import { Route as WorkEducationBiRouteImport } from './routes/work_.education-bi'
+import { Route as WorkEnergyAuditRouteImport } from './routes/work_.energy-audit'
+import { Route as WorkErpGlobalManufacturingRouteImport } from './routes/work_.erp-global-manufacturing'
+import { Route as WorkEvBatteryRouteImport } from './routes/work_.ev-battery'
+import { Route as WorkEvCabSchedulingRouteImport } from './routes/work_.ev-cab-scheduling'
+import { Route as WorkFmcgFieldSalesRouteImport } from './routes/work_.fmcg-field-sales'
+import { Route as WorkHeritageMappingRouteImport } from './routes/work_.heritage-mapping'
+import { Route as WorkPharmaFieldForceRouteImport } from './routes/work_.pharma-field-force'
+import { Route as WorkRetailManufacturingRouteImport } from './routes/work_.retail-manufacturing'
+import { Route as WorkSolarBiRouteImport } from './routes/work_.solar-bi'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -101,6 +114,72 @@ const ApproachVsStaffingRoute = ApproachVsStaffingRouteImport.update({
   path: '/approach/vs-staffing',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WorkCapitalEquipmentRoute = WorkCapitalEquipmentRouteImport.update({
+  id: '/work_/capital-equipment',
+  path: '/work/capital-equipment',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkDemandForecastingRoute = WorkDemandForecastingRouteImport.update({
+  id: '/work_/demand-forecasting',
+  path: '/work/demand-forecasting',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkEcommerceReportingRoute = WorkEcommerceReportingRouteImport.update({
+  id: '/work_/ecommerce-reporting',
+  path: '/work/ecommerce-reporting',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkEducationBiRoute = WorkEducationBiRouteImport.update({
+  id: '/work_/education-bi',
+  path: '/work/education-bi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkEnergyAuditRoute = WorkEnergyAuditRouteImport.update({
+  id: '/work_/energy-audit',
+  path: '/work/energy-audit',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkErpGlobalManufacturingRoute =
+  WorkErpGlobalManufacturingRouteImport.update({
+    id: '/work_/erp-global-manufacturing',
+    path: '/work/erp-global-manufacturing',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const WorkEvBatteryRoute = WorkEvBatteryRouteImport.update({
+  id: '/work_/ev-battery',
+  path: '/work/ev-battery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkEvCabSchedulingRoute = WorkEvCabSchedulingRouteImport.update({
+  id: '/work_/ev-cab-scheduling',
+  path: '/work/ev-cab-scheduling',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkFmcgFieldSalesRoute = WorkFmcgFieldSalesRouteImport.update({
+  id: '/work_/fmcg-field-sales',
+  path: '/work/fmcg-field-sales',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkHeritageMappingRoute = WorkHeritageMappingRouteImport.update({
+  id: '/work_/heritage-mapping',
+  path: '/work/heritage-mapping',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkPharmaFieldForceRoute = WorkPharmaFieldForceRouteImport.update({
+  id: '/work_/pharma-field-force',
+  path: '/work/pharma-field-force',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkRetailManufacturingRoute = WorkRetailManufacturingRouteImport.update({
+  id: '/work_/retail-manufacturing',
+  path: '/work/retail-manufacturing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkSolarBiRoute = WorkSolarBiRouteImport.update({
+  id: '/work_/solar-bi',
+  path: '/work/solar-bi',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -118,6 +197,19 @@ export interface FileRoutesByFullPath {
   '/approach/vs-hiring': typeof ApproachVsHiringRoute
   '/approach/vs-it-services': typeof ApproachVsItServicesRoute
   '/approach/vs-staffing': typeof ApproachVsStaffingRoute
+  '/work/capital-equipment': typeof WorkCapitalEquipmentRoute
+  '/work/demand-forecasting': typeof WorkDemandForecastingRoute
+  '/work/ecommerce-reporting': typeof WorkEcommerceReportingRoute
+  '/work/education-bi': typeof WorkEducationBiRoute
+  '/work/energy-audit': typeof WorkEnergyAuditRoute
+  '/work/erp-global-manufacturing': typeof WorkErpGlobalManufacturingRoute
+  '/work/ev-battery': typeof WorkEvBatteryRoute
+  '/work/ev-cab-scheduling': typeof WorkEvCabSchedulingRoute
+  '/work/fmcg-field-sales': typeof WorkFmcgFieldSalesRoute
+  '/work/heritage-mapping': typeof WorkHeritageMappingRoute
+  '/work/pharma-field-force': typeof WorkPharmaFieldForceRoute
+  '/work/retail-manufacturing': typeof WorkRetailManufacturingRoute
+  '/work/solar-bi': typeof WorkSolarBiRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -135,6 +227,19 @@ export interface FileRoutesByTo {
   '/approach/vs-hiring': typeof ApproachVsHiringRoute
   '/approach/vs-it-services': typeof ApproachVsItServicesRoute
   '/approach/vs-staffing': typeof ApproachVsStaffingRoute
+  '/work/capital-equipment': typeof WorkCapitalEquipmentRoute
+  '/work/demand-forecasting': typeof WorkDemandForecastingRoute
+  '/work/ecommerce-reporting': typeof WorkEcommerceReportingRoute
+  '/work/education-bi': typeof WorkEducationBiRoute
+  '/work/energy-audit': typeof WorkEnergyAuditRoute
+  '/work/erp-global-manufacturing': typeof WorkErpGlobalManufacturingRoute
+  '/work/ev-battery': typeof WorkEvBatteryRoute
+  '/work/ev-cab-scheduling': typeof WorkEvCabSchedulingRoute
+  '/work/fmcg-field-sales': typeof WorkFmcgFieldSalesRoute
+  '/work/heritage-mapping': typeof WorkHeritageMappingRoute
+  '/work/pharma-field-force': typeof WorkPharmaFieldForceRoute
+  '/work/retail-manufacturing': typeof WorkRetailManufacturingRoute
+  '/work/solar-bi': typeof WorkSolarBiRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -153,6 +258,19 @@ export interface FileRoutesById {
   '/approach_/vs-hiring': typeof ApproachVsHiringRoute
   '/approach_/vs-it-services': typeof ApproachVsItServicesRoute
   '/approach_/vs-staffing': typeof ApproachVsStaffingRoute
+  '/work_/capital-equipment': typeof WorkCapitalEquipmentRoute
+  '/work_/demand-forecasting': typeof WorkDemandForecastingRoute
+  '/work_/ecommerce-reporting': typeof WorkEcommerceReportingRoute
+  '/work_/education-bi': typeof WorkEducationBiRoute
+  '/work_/energy-audit': typeof WorkEnergyAuditRoute
+  '/work_/erp-global-manufacturing': typeof WorkErpGlobalManufacturingRoute
+  '/work_/ev-battery': typeof WorkEvBatteryRoute
+  '/work_/ev-cab-scheduling': typeof WorkEvCabSchedulingRoute
+  '/work_/fmcg-field-sales': typeof WorkFmcgFieldSalesRoute
+  '/work_/heritage-mapping': typeof WorkHeritageMappingRoute
+  '/work_/pharma-field-force': typeof WorkPharmaFieldForceRoute
+  '/work_/retail-manufacturing': typeof WorkRetailManufacturingRoute
+  '/work_/solar-bi': typeof WorkSolarBiRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -172,6 +290,19 @@ export interface FileRouteTypes {
     | '/approach/vs-hiring'
     | '/approach/vs-it-services'
     | '/approach/vs-staffing'
+    | '/work/capital-equipment'
+    | '/work/demand-forecasting'
+    | '/work/ecommerce-reporting'
+    | '/work/education-bi'
+    | '/work/energy-audit'
+    | '/work/erp-global-manufacturing'
+    | '/work/ev-battery'
+    | '/work/ev-cab-scheduling'
+    | '/work/fmcg-field-sales'
+    | '/work/heritage-mapping'
+    | '/work/pharma-field-force'
+    | '/work/retail-manufacturing'
+    | '/work/solar-bi'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -189,6 +320,19 @@ export interface FileRouteTypes {
     | '/approach/vs-hiring'
     | '/approach/vs-it-services'
     | '/approach/vs-staffing'
+    | '/work/capital-equipment'
+    | '/work/demand-forecasting'
+    | '/work/ecommerce-reporting'
+    | '/work/education-bi'
+    | '/work/energy-audit'
+    | '/work/erp-global-manufacturing'
+    | '/work/ev-battery'
+    | '/work/ev-cab-scheduling'
+    | '/work/fmcg-field-sales'
+    | '/work/heritage-mapping'
+    | '/work/pharma-field-force'
+    | '/work/retail-manufacturing'
+    | '/work/solar-bi'
   id:
     | '__root__'
     | '/'
@@ -206,6 +350,19 @@ export interface FileRouteTypes {
     | '/approach_/vs-hiring'
     | '/approach_/vs-it-services'
     | '/approach_/vs-staffing'
+    | '/work_/capital-equipment'
+    | '/work_/demand-forecasting'
+    | '/work_/ecommerce-reporting'
+    | '/work_/education-bi'
+    | '/work_/energy-audit'
+    | '/work_/erp-global-manufacturing'
+    | '/work_/ev-battery'
+    | '/work_/ev-cab-scheduling'
+    | '/work_/fmcg-field-sales'
+    | '/work_/heritage-mapping'
+    | '/work_/pharma-field-force'
+    | '/work_/retail-manufacturing'
+    | '/work_/solar-bi'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -224,6 +381,19 @@ export interface RootRouteChildren {
   ApproachVsHiringRoute: typeof ApproachVsHiringRoute
   ApproachVsItServicesRoute: typeof ApproachVsItServicesRoute
   ApproachVsStaffingRoute: typeof ApproachVsStaffingRoute
+  WorkCapitalEquipmentRoute: typeof WorkCapitalEquipmentRoute
+  WorkDemandForecastingRoute: typeof WorkDemandForecastingRoute
+  WorkEcommerceReportingRoute: typeof WorkEcommerceReportingRoute
+  WorkEducationBiRoute: typeof WorkEducationBiRoute
+  WorkEnergyAuditRoute: typeof WorkEnergyAuditRoute
+  WorkErpGlobalManufacturingRoute: typeof WorkErpGlobalManufacturingRoute
+  WorkEvBatteryRoute: typeof WorkEvBatteryRoute
+  WorkEvCabSchedulingRoute: typeof WorkEvCabSchedulingRoute
+  WorkFmcgFieldSalesRoute: typeof WorkFmcgFieldSalesRoute
+  WorkHeritageMappingRoute: typeof WorkHeritageMappingRoute
+  WorkPharmaFieldForceRoute: typeof WorkPharmaFieldForceRoute
+  WorkRetailManufacturingRoute: typeof WorkRetailManufacturingRoute
+  WorkSolarBiRoute: typeof WorkSolarBiRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -333,6 +503,97 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApproachVsStaffingRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/work_/capital-equipment': {
+      id: '/work_/capital-equipment'
+      path: '/work/capital-equipment'
+      fullPath: '/work/capital-equipment'
+      preLoaderRoute: typeof WorkCapitalEquipmentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work_/demand-forecasting': {
+      id: '/work_/demand-forecasting'
+      path: '/work/demand-forecasting'
+      fullPath: '/work/demand-forecasting'
+      preLoaderRoute: typeof WorkDemandForecastingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work_/ecommerce-reporting': {
+      id: '/work_/ecommerce-reporting'
+      path: '/work/ecommerce-reporting'
+      fullPath: '/work/ecommerce-reporting'
+      preLoaderRoute: typeof WorkEcommerceReportingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work_/education-bi': {
+      id: '/work_/education-bi'
+      path: '/work/education-bi'
+      fullPath: '/work/education-bi'
+      preLoaderRoute: typeof WorkEducationBiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work_/energy-audit': {
+      id: '/work_/energy-audit'
+      path: '/work/energy-audit'
+      fullPath: '/work/energy-audit'
+      preLoaderRoute: typeof WorkEnergyAuditRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work_/erp-global-manufacturing': {
+      id: '/work_/erp-global-manufacturing'
+      path: '/work/erp-global-manufacturing'
+      fullPath: '/work/erp-global-manufacturing'
+      preLoaderRoute: typeof WorkErpGlobalManufacturingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work_/ev-battery': {
+      id: '/work_/ev-battery'
+      path: '/work/ev-battery'
+      fullPath: '/work/ev-battery'
+      preLoaderRoute: typeof WorkEvBatteryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work_/ev-cab-scheduling': {
+      id: '/work_/ev-cab-scheduling'
+      path: '/work/ev-cab-scheduling'
+      fullPath: '/work/ev-cab-scheduling'
+      preLoaderRoute: typeof WorkEvCabSchedulingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work_/fmcg-field-sales': {
+      id: '/work_/fmcg-field-sales'
+      path: '/work/fmcg-field-sales'
+      fullPath: '/work/fmcg-field-sales'
+      preLoaderRoute: typeof WorkFmcgFieldSalesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work_/heritage-mapping': {
+      id: '/work_/heritage-mapping'
+      path: '/work/heritage-mapping'
+      fullPath: '/work/heritage-mapping'
+      preLoaderRoute: typeof WorkHeritageMappingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work_/pharma-field-force': {
+      id: '/work_/pharma-field-force'
+      path: '/work/pharma-field-force'
+      fullPath: '/work/pharma-field-force'
+      preLoaderRoute: typeof WorkPharmaFieldForceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work_/retail-manufacturing': {
+      id: '/work_/retail-manufacturing'
+      path: '/work/retail-manufacturing'
+      fullPath: '/work/retail-manufacturing'
+      preLoaderRoute: typeof WorkRetailManufacturingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work_/solar-bi': {
+      id: '/work_/solar-bi'
+      path: '/work/solar-bi'
+      fullPath: '/work/solar-bi'
+      preLoaderRoute: typeof WorkSolarBiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -352,6 +613,19 @@ const rootRouteChildren: RootRouteChildren = {
   ApproachVsHiringRoute: ApproachVsHiringRoute,
   ApproachVsItServicesRoute: ApproachVsItServicesRoute,
   ApproachVsStaffingRoute: ApproachVsStaffingRoute,
+  WorkCapitalEquipmentRoute: WorkCapitalEquipmentRoute,
+  WorkDemandForecastingRoute: WorkDemandForecastingRoute,
+  WorkEcommerceReportingRoute: WorkEcommerceReportingRoute,
+  WorkEducationBiRoute: WorkEducationBiRoute,
+  WorkEnergyAuditRoute: WorkEnergyAuditRoute,
+  WorkErpGlobalManufacturingRoute: WorkErpGlobalManufacturingRoute,
+  WorkEvBatteryRoute: WorkEvBatteryRoute,
+  WorkEvCabSchedulingRoute: WorkEvCabSchedulingRoute,
+  WorkFmcgFieldSalesRoute: WorkFmcgFieldSalesRoute,
+  WorkHeritageMappingRoute: WorkHeritageMappingRoute,
+  WorkPharmaFieldForceRoute: WorkPharmaFieldForceRoute,
+  WorkRetailManufacturingRoute: WorkRetailManufacturingRoute,
+  WorkSolarBiRoute: WorkSolarBiRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
