@@ -1,0 +1,143 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { SiteLayout } from "../components/site-layout";
+
+export const Route = createFileRoute("/contact")({
+  head: () => ({
+    meta: [
+      { title: "Contact | Sail Analytics" },
+      {
+        name: "description",
+        content:
+          "Tell Sail Analytics about your data problem. We reply with how we'd approach it and what the work looks like.",
+      },
+      { property: "og:title", content: "Contact | Sail Analytics" },
+      {
+        property: "og:description",
+        content:
+          "Tell Sail Analytics about your data problem. We reply with how we'd approach it and what the work looks like.",
+      },
+      { property: "og:type", content: "website" },
+    ],
+  }),
+  component: Contact,
+});
+
+function Contact() {
+  return (
+    <SiteLayout>
+      <section className="view" id="v-contact" data-route="/contact">
+        <section className="section-sm">
+          <div className="page">
+            <p className="eyebrow">Start a conversation</p>
+            <h1>Tell us about your data problem.</h1>
+            <p className="lede">
+              Bring the outcome you need and the situation you&rsquo;re in. We reply with how we&rsquo;d approach it
+              and what the work looks like.
+            </p>
+          </div>
+        </section>
+
+        <section className="section-sm tint">
+          <div className="page-wide">
+            <div className="reach">
+              <div>
+                <h2>Send the brief.</h2>
+                <form
+                  action="mailto:hello@sailanalytics.com"
+                  method="post"
+                  encType="text/plain"
+                  style={{ marginTop: "var(--s5)" }}
+                >
+                  <div className="two-up">
+                    <div className="field">
+                      <label htmlFor="n">Your name <span className="req">*</span></label>
+                      <input id="n" name="name" type="text" autoComplete="name" required />
+                    </div>
+                    <div className="field">
+                      <label htmlFor="co">Company <span className="req">*</span></label>
+                      <input id="co" name="company" type="text" autoComplete="organization" required />
+                    </div>
+                  </div>
+                  <div className="two-up">
+                    <div className="field">
+                      <label htmlFor="em">Work email <span className="req">*</span></label>
+                      <input id="em" name="email" type="email" autoComplete="email" required />
+                    </div>
+                    <div className="field">
+                      <label htmlFor="si">Where you&rsquo;re starting from</label>
+                      <select id="si" name="situation" defaultValue="We have a data problem to solve">
+                        <option>We have a data problem to solve</option>
+                        <option>We&rsquo;re building a data capability from scratch</option>
+                        <option>We have a team and a gap</option>
+                        <option>Not sure yet</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className="field">
+                    <label htmlFor="ob">What are you trying to solve? <span className="req">*</span></label>
+                    <input
+                      id="ob"
+                      name="objective"
+                      type="text"
+                      placeholder="e.g. one trusted view of primary and secondary sales"
+                      required
+                    />
+                  </div>
+                  <div className="field">
+                    <label htmlFor="de">Anything else worth knowing</label>
+                    <textarea
+                      id="de"
+                      name="detail"
+                      placeholder="Systems, timing, budget range, what has been tried."
+                    />
+                  </div>
+                  <div className="acts" style={{ marginTop: "var(--s5)" }}>
+                    <button className="btn btn-signal" type="submit">Send the brief</button>
+                    <span className="aside">WE REPLY IN WRITING</span>
+                  </div>
+                </form>
+              </div>
+              <div>
+                <h2>Or reach us directly.</h2>
+                <dl className="facts" style={{ marginTop: "var(--s5)" }}>
+                  <div><dt>Email</dt><dd><a href="mailto:hello@sailanalytics.com">hello@sailanalytics.com</a></dd></div>
+                  <div><dt>New business</dt><dd>Send the outcome and the situation. A person replies.</dd></div>
+                  <div><dt>What next</dt><dd>A scoping conversation, then a recommended approach.</dd></div>
+                  <div><dt>Comparing routes</dt><dd><Link to="/approach">How should you build your data capability?</Link></dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="page">
+            <p className="eyebrow">Questions</p>
+            <h2>Before you write.</h2>
+            <div className="qa" style={{ marginTop: "var(--s6)" }}>
+              <details open>
+                <summary>What happens after I send this?</summary>
+                <div className="ans">
+                  <p>
+                    A person reads it and replies. If it&rsquo;s a fit, the next step is a scoping conversation
+                    about the outcome, the systems and the right approach. If it isn&rsquo;t work we should do,
+                    we&rsquo;ll say so.
+                  </p>
+                </div>
+              </details>
+              <details>
+                <summary>Do you respond to RFPs?</summary>
+                <div className="ans">
+                  <p>
+                    Yes. Send the document and the deadline. Scoped delivery is quoted against a written scope, so
+                    precision helps.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </section>
+      </section>
+    </SiteLayout>
+  );
+}

@@ -10,6 +10,10 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+
+# This project uses bun (bun.lock) as its canonical lockfile; ignore npm's
+# lockfile so a local `npm install` doesn't create a conflicting one.
+package-lock.json
 .output
 .vinxi
 .tanstack/**
