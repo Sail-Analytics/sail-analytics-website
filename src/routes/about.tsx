@@ -115,8 +115,8 @@ function About() {
             <p className="eyebrow">About</p>
             <h1>We help businesses make better decisions through data.</h1>
             <p className="lede">
-              That&rsquo;s the whole mission, and it sets the test for the work. A dashboard nobody opens
-              hasn&rsquo;t helped anyone decide anything. Delivery only counts once the thing is in use.
+              That's the whole mission, and it sets the test for the work. A dashboard nobody opens
+              hasn't helped anyone decide anything. Delivery only counts once the thing is in use.
             </p>
           </div>
         </section>
@@ -126,12 +126,12 @@ function About() {
             <p className="eyebrow">Who we are</p>
             <h2>A specialist data and analytics firm.</h2>
             <p>
-              Sail Analytics takes messy business data problems and turns them into working systems. We&rsquo;re
+              Sail Analytics takes messy business data problems and turns them into working systems. We're
               hands-on and technically credible: the people who set the direction are the people who build the
               platforms, pipelines, dashboards and models on top of them.
             </p>
             <p>
-              We&rsquo;re not a large consultancy describing what should be done, and we&rsquo;re not a source of
+              We're not a large consultancy describing what should be done, and we're not a source of
               interchangeable hands. Our specialists are employed by Sail Analytics, which is what lets us stand
               behind each engagement with continuity, an architect on call, and a start date drawn from current
               availability.
@@ -147,7 +147,7 @@ function About() {
               <div className="build">
                 <p className="verb">Craft</p>
                 <h3>Excellence in the work</h3>
-                <p>A steadfast commitment to quality and value, built around zero compromise. We&rsquo;re specialists who genuinely like crunching data for a living.</p>
+                <p>A steadfast commitment to quality and value, built around zero compromise. We're specialists who genuinely like crunching data for a living.</p>
               </div>
               <div className="build">
                 <p className="verb">Impact</p>
@@ -162,7 +162,7 @@ function About() {
               <div className="build">
                 <p className="verb">Honesty</p>
                 <h3>Straight answers</h3>
-                <p>We say where we fit and where we don&rsquo;t. If a problem isn&rsquo;t work we should take on, we&rsquo;ll tell you.</p>
+                <p>We say where we fit and where we don't. If a problem isn't work we should take on, we'll tell you.</p>
               </div>
             </div>
           </div>
@@ -198,7 +198,7 @@ function About() {
         <section className="section tint">
           <div className="page">
             <p className="eyebrow">Trusted by</p>
-            <h2>Businesses and brands we&rsquo;ve built for.</h2>
+            <h2>Businesses and brands we've built for.</h2>
             <ul className="logos" aria-label="Client logos">
               {CLIENT_LOGOS.map((logo) => (
                 <li key={logo.key}>
@@ -212,7 +212,7 @@ function About() {
         <section className="section dark">
           <div className="page">
             <h2>Talk to the team.</h2>
-            <p className="lede">Tell us what you&rsquo;re trying to build, and we&rsquo;ll tell you how we&rsquo;d approach it.</p>
+            <p className="lede">Tell us what you're trying to build, and we'll tell you how we'd approach it.</p>
             <div className="acts">
               <Link className="btn btn-signal" to="/contact">Start a conversation</Link>
               <Link className="btn btn-ghost" to="/work">Read the case studies</Link>

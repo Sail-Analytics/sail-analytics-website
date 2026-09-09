@@ -74,7 +74,7 @@ function HowWeWork() {
                   </div>
                   <div>
                     <h4>What you get</h4>
-                    <p>Specialists backed by a team, so an adjacent skill and an architect&rsquo;s view are a question away.</p>
+                    <p>Specialists backed by a team, so an adjacent skill and an architect's view are a question away.</p>
                   </div>
                 </div>
               </div>
@@ -110,7 +110,7 @@ function HowWeWork() {
               Commonly the sequence runs one way: a discovery phase clears the unknowns, the build that follows is
               scoped precisely, and an ongoing capability keeps it moving.
             </p>
-            <p>What stays constant is accountability. We&rsquo;re not describing what should be done and handing it off. We build the thing and stand behind it in daily use.</p>
+            <p>What stays constant is accountability. We're not describing what should be done and handing it off. We build the thing and stand behind it in daily use.</p>
           </div>
         </section>
 
@@ -131,11 +131,11 @@ function HowWeWork() {
               <details>
                 <summary>Who does the work?</summary>
                 <div className="ans">
-                  <p>Experienced specialists employed by Sail Analytics. That&rsquo;s what makes continuity, an architect on call, and a start date drawn from current availability possible.</p>
+                  <p>Experienced specialists employed by Sail Analytics. That's what makes continuity, an architect on call, and a start date drawn from current availability possible.</p>
                 </div>
               </details>
               <details>
-                <summary>What&rsquo;s the smallest engagement you take?</summary>
+                <summary>What's the smallest engagement you take?</summary>
                 <div className="ans">
                   <p>A single, well-defined outcome. The models are built to flex down as well as up, so a focused first piece of work is a fine place to start.</p>
                 </div>
@@ -147,7 +147,7 @@ function HowWeWork() {
         <section className="section dark">
           <div className="page">
             <h2>Not sure which fits?</h2>
-            <p className="lede">Tell us the situation and the outcome you need, and we&rsquo;ll recommend the model.</p>
+            <p className="lede">Tell us the situation and the outcome you need, and we'll recommend the model.</p>
             <div className="acts">
               <Link className="btn btn-signal" to="/contact">Start a conversation</Link>
               <Link className="btn btn-ghost" to="/approach">How should you build your data capability?</Link>

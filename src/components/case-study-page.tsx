@@ -60,7 +60,7 @@ export function CaseStudyPage({ data }: { data: CaseStudyData }) {
             )}
             <div className="callout">
               <p>
-                <b>On sourcing.</b> Every fact and figure here comes from Sail Analytics&rsquo; project record for
+                <b>On sourcing.</b> Every fact and figure here comes from Sail Analytics' project record for
                 this engagement. Client names are withheld where they were not released for publication.
               </p>
             </div>
@@ -103,7 +103,7 @@ export function CaseStudyPage({ data }: { data: CaseStudyData }) {
         <section className="section dark">
           <div className="page">
             <h2>Have a problem like this?</h2>
-            <p className="lede">Tell us the systems you&rsquo;re working with and what you can&rsquo;t currently see.</p>
+            <p className="lede">Tell us the systems you're working with and what you can't currently see.</p>
             <div className="acts">
               <Link className="btn btn-signal" to="/contact">Start a conversation</Link>
             </div>

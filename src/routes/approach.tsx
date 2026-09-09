@@ -40,9 +40,9 @@ function Approach() {
             <p className="eyebrow">Building your data capability</p>
             <h1>How should you build your data capability?</h1>
             <p className="lede">
-              There&rsquo;s no single right answer; it depends on where you&rsquo;re starting from and what data
-              needs to become for your business. Here&rsquo;s an honest guide to the main routes, including where
-              Sail Analytics fits and where it doesn&rsquo;t.
+              There's no single right answer; it depends on where you're starting from and what data
+              needs to become for your business. Here's an honest guide to the main routes, including where
+              Sail Analytics fits and where it doesn't.
             </p>
           </div>
         </section>
@@ -88,10 +88,10 @@ function Approach() {
             <div className="page" style={{ paddingLeft: 0, paddingRight: 0 }}>
               <div className="callout" style={{ marginTop: "var(--s6)" }}>
                 <p>
-                  <b>The honest line.</b> Sail Analytics isn&rsquo;t the right answer for every situation, and
-                  we&rsquo;ll say so. Where you need a working data system built by people who&rsquo;ve done it
+                  <b>The honest line.</b> Sail Analytics isn't the right answer for every situation, and
+                  we'll say so. Where you need a working data system built by people who've done it
                   before, with less trial and error than building from scratch and more delivery than pure
-                  advisory, that&rsquo;s exactly where we fit.
+                  advisory, that's exactly where we fit.
                 </p>
               </div>
             </div>
@@ -103,8 +103,8 @@ function Approach() {
             <p className="eyebrow">The detail</p>
             <h2>Sail Analytics, compared to the alternatives.</h2>
             <p className="lede">
-              Six honest comparisons against the routes you&rsquo;re probably weighing. None of them claim Sail
-              Analytics is always better; each says exactly where it fits, and where it doesn&rsquo;t.
+              Six honest comparisons against the routes you're probably weighing. None of them claim Sail
+              Analytics is always better; each says exactly where it fits, and where it doesn't.
             </p>
             <div className="grid" style={{ marginTop: "var(--s6)" }}>
               {COMPARISONS.map((c) => (
@@ -126,10 +126,10 @@ function Approach() {
         <section className="section dark">
           <div className="page">
             <h2>Not sure which way to go?</h2>
-            <p className="lede">Describe your situation and we&rsquo;ll tell you honestly whether Sail Analytics is the right call.</p>
+            <p className="lede">Describe your situation and we'll tell you honestly whether Sail Analytics is the right call.</p>
             <div className="acts">
               <Link className="btn btn-signal" to="/contact">Start a conversation</Link>
-              <Link className="btn btn-ghost" to="/calculator">Estimate a specialist&rsquo;s cost</Link>
+              <Link className="btn btn-ghost" to="/calculator">Estimate a specialist's cost</Link>
             </div>
           </div>
         </section>

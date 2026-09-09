@@ -250,12 +250,12 @@ function Index() {
             <p className="eyebrow">Where we have experience</p>
             <h2>The problems we solve, by industry.</h2>
             <p className="lede">
-              Our experience is domain experience. In each of these sectors, here&rsquo;s the kind of problem
-              we&rsquo;re brought in to solve.
+              Our experience is domain experience. In each of these sectors, here's the kind of problem
+              we're brought in to solve.
             </p>
             <div className="inds">
               <div className="ind"><h3>Retail &amp; Consumer</h3><p>Stock-outs and overstock, real-time reporting across sales and inventory, and product mix from market-basket analysis.</p></div>
-              <div className="ind"><h3>Manufacturing</h3><p>ERP and production data brought together, data quality and stewardship established, and adoption tracked where it wasn&rsquo;t before.</p></div>
+              <div className="ind"><h3>Manufacturing</h3><p>ERP and production data brought together, data quality and stewardship established, and adoption tracked where it wasn't before.</p></div>
               <div className="ind"><h3>Energy</h3><p>Decades of unorganised records digitised, and sensor and audio analytics that detect faults from the signal itself.</p></div>
               <div className="ind"><h3>Pharma &amp; Healthcare</h3><p>Field-force effort versus sales, route optimisation, and three-tier dashboards that alert the right person on a breach.</p></div>
               <div className="ind"><h3>Education</h3><p>Learning outcomes and financial performance unified into one view for the people running the schools.</p></div>
@@ -292,9 +292,9 @@ function Index() {
             <p className="eyebrow">Why Sail Analytics</p>
             <h2>Business-first. Technically deep. Built to deliver.</h2>
             <div className="why">
-              <div className="why-item"><p className="wn">01</p><h3>Business-first</h3><p>We start from the decision you&rsquo;re trying to make, not the technology. The problem is the unit of value.</p></div>
+              <div className="why-item"><p className="wn">01</p><h3>Business-first</h3><p>We start from the decision you're trying to make, not the technology. The problem is the unit of value.</p></div>
               <div className="why-item"><p className="wn">02</p><h3>Technically deep</h3><p>The people who set the direction are the people who build it, hands-on across the whole stack.</p></div>
-              <div className="why-item"><p className="wn">03</p><h3>Built to deliver</h3><p>We&rsquo;re accountable for a working system in daily use, not a deck describing one.</p></div>
+              <div className="why-item"><p className="wn">03</p><h3>Built to deliver</h3><p>We're accountable for a working system in daily use, not a deck describing one.</p></div>
             </div>
             <div className="quote">
               <blockquote>
@@ -309,7 +309,7 @@ function Index() {
         <section className="section tint">
           <div className="page">
             <p className="eyebrow">Trusted by</p>
-            <h2>Businesses and brands we&rsquo;ve built for.</h2>
+            <h2>Businesses and brands we've built for.</h2>
             <ul className="logos" aria-label="Client logos">
               {CLIENT_LOGOS.map((logo) => (
                 <li key={logo.key}>
@@ -324,8 +324,8 @@ function Index() {
           <div className="page">
             <h2>Have a data problem worth solving?</h2>
             <p className="lede">
-              Tell us the decision you&rsquo;re trying to make and the systems involved. We&rsquo;ve probably seen
-              something like it before, and we&rsquo;ll figure out how to build it.
+              Tell us the decision you're trying to make and the systems involved. We've probably seen
+              something like it before, and we'll figure out how to build it.
             </p>
             <div className="acts">
               <Link className="btn btn-signal" to="/contact">Talk to us</Link>

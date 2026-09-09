@@ -31,7 +31,7 @@ function Contact() {
             <p className="eyebrow">Start a conversation</p>
             <h1>Tell us about your data problem.</h1>
             <p className="lede">
-              Bring the outcome you need and the situation you&rsquo;re in. We reply with how we&rsquo;d approach it
+              Bring the outcome you need and the situation you're in. We reply with how we'd approach it
               and what the work looks like.
             </p>
           </div>
@@ -64,10 +64,10 @@ function Contact() {
                       <input id="em" name="email" type="email" autoComplete="email" required />
                     </div>
                     <div className="field">
-                      <label htmlFor="si">Where you&rsquo;re starting from</label>
+                      <label htmlFor="si">Where you're starting from</label>
                       <select id="si" name="situation" defaultValue="We have a data problem to solve">
                         <option>We have a data problem to solve</option>
-                        <option>We&rsquo;re building a data capability from scratch</option>
+                        <option>We're building a data capability from scratch</option>
                         <option>We have a team and a gap</option>
                         <option>Not sure yet</option>
                       </select>
@@ -119,9 +119,9 @@ function Contact() {
                 <summary>What happens after I send this?</summary>
                 <div className="ans">
                   <p>
-                    A person reads it and replies. If it&rsquo;s a fit, the next step is a scoping conversation
-                    about the outcome, the systems and the right approach. If it isn&rsquo;t work we should do,
-                    we&rsquo;ll say so.
+                    A person reads it and replies. If it's a fit, the next step is a scoping conversation
+                    about the outcome, the systems and the right approach. If it isn't work we should do,
+                    we'll say so.
                   </p>
                 </div>
               </details>

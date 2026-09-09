@@ -21,8 +21,8 @@ function NotFoundComponent() {
         <section className="section">
           <div className="page">
             <p className="eyebrow">Off chart</p>
-            <h1>This page isn&rsquo;t on the chart.</h1>
-            <p className="lede">The address you followed doesn&rsquo;t match anything here. These cover the whole site.</p>
+            <h1>This page isn't on the chart.</h1>
+            <p className="lede">The address you followed doesn't match anything here. These cover the whole site.</p>
             <div className="prose">
               <p><Link className="textlink" to="/what-we-build">What we build</Link></p>
               <p><Link className="textlink" to="/work">Case studies</Link></p>

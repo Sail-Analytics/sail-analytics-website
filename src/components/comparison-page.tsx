@@ -107,7 +107,7 @@ export function ComparisonPage({ data }: { data: ComparisonData }) {
         <section className="section dark">
           <div className="page">
             <h2>Talk it through with us.</h2>
-            <p className="lede">Describe your situation and timeline. We&rsquo;ll tell you honestly which way to go.</p>
+            <p className="lede">Describe your situation and timeline. We'll tell you honestly which way to go.</p>
             <div className="acts">
               <Link className="btn btn-signal" to="/contact">Start a conversation</Link>
             </div>

@@ -52,7 +52,7 @@ function WhatWeBuild() {
         <section className="section-sm tint">
           <div className="page">
             <p className="eyebrow">Capabilities</p>
-            <h2>What we&rsquo;re asked to build most.</h2>
+            <h2>What we're asked to build most.</h2>
             <div className="build-grid" style={{ borderTopColor: "var(--black)" }}>
               <div className="build">
                 <p className="verb">Build</p>
@@ -92,7 +92,7 @@ function WhatWeBuild() {
           <div className="page prose">
             <p className="eyebrow">How to think about it</p>
             <h2>We sell outcomes and systems, not seats.</h2>
-            <p className="lede">The unit of value is the problem you&rsquo;re trying to solve, not the person who happens to be sitting near it.</p>
+            <p className="lede">The unit of value is the problem you're trying to solve, not the person who happens to be sitting near it.</p>
             <p>
               Every engagement brings both the capability to do the work and the judgement to steer it. The same
               specialists who build the warehouse, the pipeline, the dashboard or the model also bring the
@@ -129,7 +129,7 @@ function WhatWeBuild() {
         <section className="section dark">
           <div className="page">
             <h2>Have a problem that crosses several of these?</h2>
-            <p className="lede">Most do. Tell us the outcome and the systems involved, and we&rsquo;ll map it to the right approach.</p>
+            <p className="lede">Most do. Tell us the outcome and the systems involved, and we'll map it to the right approach.</p>
             <div className="acts">
               <Link className="btn btn-signal" to="/contact">Start a conversation</Link>
               <Link className="btn btn-ghost" to="/how-we-work">See how we work</Link>

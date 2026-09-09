@@ -49,7 +49,7 @@ function Work() {
             <p className="lede">
               Thirteen engagements across manufacturing, retail, FMCG, pharma, e-commerce, mobility, energy,
               education and the public sector. Each one starts from a business problem and ends in a working
-              system. Where the project record holds a measured number we show it; where it doesn&rsquo;t, we say
+              system. Where the project record holds a measured number we show it; where it doesn't, we say
               so rather than inventing one.
             </p>
           </div>
@@ -80,7 +80,7 @@ function Work() {
         <section className="section dark">
           <div className="page">
             <h2>See one close to your problem?</h2>
-            <p className="lede">Tell us which, and we&rsquo;ll walk you through how we&rsquo;d approach yours.</p>
+            <p className="lede">Tell us which, and we'll walk you through how we'd approach yours.</p>
             <div className="acts">
               <Link className="btn btn-signal" to="/contact">Start a conversation</Link>
             </div>
