@@ -10,12 +10,34 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as ApproachRouteImport } from './routes/approach'
 import { Route as CalculatorRouteImport } from './routes/calculator'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as HowWeWorkRouteImport } from './routes/how-we-work'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as WhatWeBuildRouteImport } from './routes/what-we-build'
+import { Route as WorkRouteImport } from './routes/work'
+import { Route as ApproachVsBuildFromScratchRouteImport } from './routes/approach_.vs-build-from-scratch'
+import { Route as ApproachVsConsultantsRouteImport } from './routes/approach_.vs-consultants'
+import { Route as ApproachVsFreelancersRouteImport } from './routes/approach_.vs-freelancers'
+import { Route as ApproachVsHiringRouteImport } from './routes/approach_.vs-hiring'
+import { Route as ApproachVsItServicesRouteImport } from './routes/approach_.vs-it-services'
+import { Route as ApproachVsStaffingRouteImport } from './routes/approach_.vs-staffing'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApproachRoute = ApproachRouteImport.update({
+  id: '/approach',
+  path: '/approach',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CalculatorRoute = CalculatorRouteImport.update({
@@ -28,35 +50,180 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const HowWeWorkRoute = HowWeWorkRouteImport.update({
+  id: '/how-we-work',
+  path: '/how-we-work',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WhatWeBuildRoute = WhatWeBuildRouteImport.update({
+  id: '/what-we-build',
+  path: '/what-we-build',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkRoute = WorkRouteImport.update({
+  id: '/work',
+  path: '/work',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApproachVsBuildFromScratchRoute =
+  ApproachVsBuildFromScratchRouteImport.update({
+    id: '/approach_/vs-build-from-scratch',
+    path: '/approach/vs-build-from-scratch',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ApproachVsConsultantsRoute = ApproachVsConsultantsRouteImport.update({
+  id: '/approach_/vs-consultants',
+  path: '/approach/vs-consultants',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApproachVsFreelancersRoute = ApproachVsFreelancersRouteImport.update({
+  id: '/approach_/vs-freelancers',
+  path: '/approach/vs-freelancers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApproachVsHiringRoute = ApproachVsHiringRouteImport.update({
+  id: '/approach_/vs-hiring',
+  path: '/approach/vs-hiring',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApproachVsItServicesRoute = ApproachVsItServicesRouteImport.update({
+  id: '/approach_/vs-it-services',
+  path: '/approach/vs-it-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApproachVsStaffingRoute = ApproachVsStaffingRouteImport.update({
+  id: '/approach_/vs-staffing',
+  path: '/approach/vs-staffing',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/approach': typeof ApproachRoute
   '/calculator': typeof CalculatorRoute
   '/contact': typeof ContactRoute
+  '/how-we-work': typeof HowWeWorkRoute
+  '/privacy': typeof PrivacyRoute
+  '/what-we-build': typeof WhatWeBuildRoute
+  '/work': typeof WorkRoute
+  '/approach/vs-build-from-scratch': typeof ApproachVsBuildFromScratchRoute
+  '/approach/vs-consultants': typeof ApproachVsConsultantsRoute
+  '/approach/vs-freelancers': typeof ApproachVsFreelancersRoute
+  '/approach/vs-hiring': typeof ApproachVsHiringRoute
+  '/approach/vs-it-services': typeof ApproachVsItServicesRoute
+  '/approach/vs-staffing': typeof ApproachVsStaffingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/approach': typeof ApproachRoute
   '/calculator': typeof CalculatorRoute
   '/contact': typeof ContactRoute
+  '/how-we-work': typeof HowWeWorkRoute
+  '/privacy': typeof PrivacyRoute
+  '/what-we-build': typeof WhatWeBuildRoute
+  '/work': typeof WorkRoute
+  '/approach/vs-build-from-scratch': typeof ApproachVsBuildFromScratchRoute
+  '/approach/vs-consultants': typeof ApproachVsConsultantsRoute
+  '/approach/vs-freelancers': typeof ApproachVsFreelancersRoute
+  '/approach/vs-hiring': typeof ApproachVsHiringRoute
+  '/approach/vs-it-services': typeof ApproachVsItServicesRoute
+  '/approach/vs-staffing': typeof ApproachVsStaffingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/approach': typeof ApproachRoute
   '/calculator': typeof CalculatorRoute
   '/contact': typeof ContactRoute
+  '/how-we-work': typeof HowWeWorkRoute
+  '/privacy': typeof PrivacyRoute
+  '/what-we-build': typeof WhatWeBuildRoute
+  '/work': typeof WorkRoute
+  '/approach_/vs-build-from-scratch': typeof ApproachVsBuildFromScratchRoute
+  '/approach_/vs-consultants': typeof ApproachVsConsultantsRoute
+  '/approach_/vs-freelancers': typeof ApproachVsFreelancersRoute
+  '/approach_/vs-hiring': typeof ApproachVsHiringRoute
+  '/approach_/vs-it-services': typeof ApproachVsItServicesRoute
+  '/approach_/vs-staffing': typeof ApproachVsStaffingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/calculator' | '/contact'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/approach'
+    | '/calculator'
+    | '/contact'
+    | '/how-we-work'
+    | '/privacy'
+    | '/what-we-build'
+    | '/work'
+    | '/approach/vs-build-from-scratch'
+    | '/approach/vs-consultants'
+    | '/approach/vs-freelancers'
+    | '/approach/vs-hiring'
+    | '/approach/vs-it-services'
+    | '/approach/vs-staffing'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/calculator' | '/contact'
-  id: '__root__' | '/' | '/calculator' | '/contact'
+  to:
+    | '/'
+    | '/about'
+    | '/approach'
+    | '/calculator'
+    | '/contact'
+    | '/how-we-work'
+    | '/privacy'
+    | '/what-we-build'
+    | '/work'
+    | '/approach/vs-build-from-scratch'
+    | '/approach/vs-consultants'
+    | '/approach/vs-freelancers'
+    | '/approach/vs-hiring'
+    | '/approach/vs-it-services'
+    | '/approach/vs-staffing'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/approach'
+    | '/calculator'
+    | '/contact'
+    | '/how-we-work'
+    | '/privacy'
+    | '/what-we-build'
+    | '/work'
+    | '/approach_/vs-build-from-scratch'
+    | '/approach_/vs-consultants'
+    | '/approach_/vs-freelancers'
+    | '/approach_/vs-hiring'
+    | '/approach_/vs-it-services'
+    | '/approach_/vs-staffing'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  ApproachRoute: typeof ApproachRoute
   CalculatorRoute: typeof CalculatorRoute
   ContactRoute: typeof ContactRoute
+  HowWeWorkRoute: typeof HowWeWorkRoute
+  PrivacyRoute: typeof PrivacyRoute
+  WhatWeBuildRoute: typeof WhatWeBuildRoute
+  WorkRoute: typeof WorkRoute
+  ApproachVsBuildFromScratchRoute: typeof ApproachVsBuildFromScratchRoute
+  ApproachVsConsultantsRoute: typeof ApproachVsConsultantsRoute
+  ApproachVsFreelancersRoute: typeof ApproachVsFreelancersRoute
+  ApproachVsHiringRoute: typeof ApproachVsHiringRoute
+  ApproachVsItServicesRoute: typeof ApproachVsItServicesRoute
+  ApproachVsStaffingRoute: typeof ApproachVsStaffingRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -66,6 +233,20 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/approach': {
+      id: '/approach'
+      path: '/approach'
+      fullPath: '/approach'
+      preLoaderRoute: typeof ApproachRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/calculator': {
@@ -82,13 +263,95 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/how-we-work': {
+      id: '/how-we-work'
+      path: '/how-we-work'
+      fullPath: '/how-we-work'
+      preLoaderRoute: typeof HowWeWorkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/what-we-build': {
+      id: '/what-we-build'
+      path: '/what-we-build'
+      fullPath: '/what-we-build'
+      preLoaderRoute: typeof WhatWeBuildRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work': {
+      id: '/work'
+      path: '/work'
+      fullPath: '/work'
+      preLoaderRoute: typeof WorkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/approach_/vs-build-from-scratch': {
+      id: '/approach_/vs-build-from-scratch'
+      path: '/approach/vs-build-from-scratch'
+      fullPath: '/approach/vs-build-from-scratch'
+      preLoaderRoute: typeof ApproachVsBuildFromScratchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/approach_/vs-consultants': {
+      id: '/approach_/vs-consultants'
+      path: '/approach/vs-consultants'
+      fullPath: '/approach/vs-consultants'
+      preLoaderRoute: typeof ApproachVsConsultantsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/approach_/vs-freelancers': {
+      id: '/approach_/vs-freelancers'
+      path: '/approach/vs-freelancers'
+      fullPath: '/approach/vs-freelancers'
+      preLoaderRoute: typeof ApproachVsFreelancersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/approach_/vs-hiring': {
+      id: '/approach_/vs-hiring'
+      path: '/approach/vs-hiring'
+      fullPath: '/approach/vs-hiring'
+      preLoaderRoute: typeof ApproachVsHiringRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/approach_/vs-it-services': {
+      id: '/approach_/vs-it-services'
+      path: '/approach/vs-it-services'
+      fullPath: '/approach/vs-it-services'
+      preLoaderRoute: typeof ApproachVsItServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/approach_/vs-staffing': {
+      id: '/approach_/vs-staffing'
+      path: '/approach/vs-staffing'
+      fullPath: '/approach/vs-staffing'
+      preLoaderRoute: typeof ApproachVsStaffingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  ApproachRoute: ApproachRoute,
   CalculatorRoute: CalculatorRoute,
   ContactRoute: ContactRoute,
+  HowWeWorkRoute: HowWeWorkRoute,
+  PrivacyRoute: PrivacyRoute,
+  WhatWeBuildRoute: WhatWeBuildRoute,
+  WorkRoute: WorkRoute,
+  ApproachVsBuildFromScratchRoute: ApproachVsBuildFromScratchRoute,
+  ApproachVsConsultantsRoute: ApproachVsConsultantsRoute,
+  ApproachVsFreelancersRoute: ApproachVsFreelancersRoute,
+  ApproachVsHiringRoute: ApproachVsHiringRoute,
+  ApproachVsItServicesRoute: ApproachVsItServicesRoute,
+  ApproachVsStaffingRoute: ApproachVsStaffingRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
