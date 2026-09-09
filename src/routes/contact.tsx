@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState } from "react";
 import { SiteLayout } from "../components/site-layout";
+import { getSupabase } from "../lib/supabase";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -23,6 +25,39 @@ export const Route = createFileRoute("/contact")({
 });
 
 function Contact() {
+  const [status, setStatus] = useState<"idle" | "submitting" | "sent" | "error">("idle");
+
+  async function handleSubmit(ev: React.FormEvent<HTMLFormElement>) {
+    ev.preventDefault();
+    setStatus("submitting");
+    const form = ev.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const supabase = getSupabase();
+      const { error } = await supabase.from("contact_submissions").insert({
+        name: String(data.get("name") || ""),
+        company: String(data.get("company") || ""),
+        email: String(data.get("email") || ""),
+        situation: String(data.get("situation") || ""),
+        objective: String(data.get("objective") || ""),
+        detail: String(data.get("detail") || "") || null,
+        referrer: typeof document !== "undefined" ? document.referrer || null : null,
+        user_agent: typeof navigator !== "undefined" ? navigator.userAgent : null,
+      });
+      if (error) {
+        console.error("contact_submissions insert failed:", error.message);
+        setStatus("error");
+        return;
+      }
+      form.reset();
+      setStatus("sent");
+    } catch (err) {
+      console.error("Supabase not configured, submission was not saved:", err);
+      setStatus("error");
+    }
+  }
+
   return (
     <SiteLayout>
       <section className="view" id="v-contact" data-route="/contact">
@@ -42,12 +77,14 @@ function Contact() {
             <div className="reach">
               <div>
                 <h2>Send the brief.</h2>
-                <form
-                  action="mailto:hello@sailanalytics.com"
-                  method="post"
-                  encType="text/plain"
-                  style={{ marginTop: "var(--s5)" }}
-                >
+                {status === "sent" ? (
+                  <div className="callout" style={{ marginTop: "var(--s5)" }}>
+                    <p>
+                      <b>Thanks — that's sent.</b> A person will read it and reply in writing.
+                    </p>
+                  </div>
+                ) : (
+                <form onSubmit={handleSubmit} style={{ marginTop: "var(--s5)" }}>
                   <div className="two-up">
                     <div className="field">
                       <label htmlFor="n">Your name <span className="req">*</span></label>
@@ -92,10 +129,19 @@ function Contact() {
                     />
                   </div>
                   <div className="acts" style={{ marginTop: "var(--s5)" }}>
-                    <button className="btn btn-signal" type="submit">Send the brief</button>
+                    <button className="btn btn-signal" type="submit" disabled={status === "submitting"}>
+                      {status === "submitting" ? "Sending…" : "Send the brief"}
+                    </button>
                     <span className="aside">WE REPLY IN WRITING</span>
                   </div>
+                  {status === "error" && (
+                    <p className="err" style={{ display: "block", marginTop: "var(--s3)" }}>
+                      Something went wrong sending that. Please try again, or email{" "}
+                      <a href="mailto:hello@sailanalytics.com">hello@sailanalytics.com</a> directly.
+                    </p>
+                  )}
                 </form>
+                )}
               </div>
               <div>
                 <h2>Or reach us directly.</h2>
