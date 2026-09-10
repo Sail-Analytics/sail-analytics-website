@@ -146,7 +146,7 @@ export function Calculator() {
           {FIELDS.map((f, idx) => {
             const av = allowed(state, f);
             const currentValue = (state as unknown as Record<string, string>)[f.id];
-            const o = av.find((opt) => opt.v === currentValue) || av[0];
+            const o = av.find((opt) => opt.v === currentValue) ?? av[0]!;
             const note = "+" + usd(addOf(state, f.id, o.v)) + "/hr";
             const isOpen = openId === f.id;
             const lastCol = idx % cols === cols - 1;

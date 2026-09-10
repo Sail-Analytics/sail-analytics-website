@@ -195,7 +195,9 @@ export const FIELDS: Field[] = [
 export function expAdd(role: RoleKey, exp: ExpKey): number {
   const t = ROLES[role].expAdd;
   const only = ROLES[role].only;
-  return t[exp] !== undefined ? t[exp]! : t[only![0]]!;
+  if (t[exp] !== undefined) return t[exp]!;
+  const fallback = only?.[0] as ExpKey | undefined;
+  return fallback !== undefined ? t[fallback]! : 0;
 }
 
 export function priced(st: CalculatorState) {
@@ -208,7 +210,7 @@ export function priced(st: CalculatorState) {
 export function addOf(state: CalculatorState, fieldId: Field["id"], v: string): number {
   if (fieldId === "exp") return expAdd(state.role, v as ExpKey);
   const table = { load: LOAD, overlap: OVERLAP, term: TERM, start: START }[fieldId] as Record<string, { add: number }>;
-  return table[v].add;
+  return table[v]?.add ?? 0;
 }
 
 export function allowed(state: CalculatorState, f: Field): FieldOption[] {
@@ -222,7 +224,7 @@ export function allowed(state: CalculatorState, f: Field): FieldOption[] {
 export function normalise(state: CalculatorState): CalculatorState {
   const only = ROLES[state.role].only;
   if (only && only.indexOf(state.exp) < 0) {
-    return { ...state, exp: only[0] };
+    return { ...state, exp: only[0] as ExpKey };
   }
   return state;
 }
